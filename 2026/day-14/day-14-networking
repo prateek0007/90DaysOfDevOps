@@ -1,0 +1,57 @@
+OSI Layers (L1-L7)
+Physical -> Data Link -> Network -> Transport -> Session -> presentation layer -> Application Layer
+--> Mostly used to understand how network communication flows Logically
+
+TCP/IP Stack
+Link → Internet → Transport → Application
+--> Real-world implementation used on the internet
+
+Where Protocols Sit
+Protocol	 Layer
+IP               Internet / Network
+TCP/UDP	         Transport
+HTTP/HTTPS	 Application
+DNS	         Application
+Ethernet	 Link
+
+
+Real Example
+
+curl https://example.com
+
+This works as:
+
+Application Layer (HTTP/HTTPS)
+→ over TCP
+→ over IP
+→ over Ethernet/WiFi
+
+Q- Which command gives you the fastest signal during toubleshooting ?
+PING gives you the quickest indication of basic connectivity problems 
+
+for application issues, curl -I is extremely useful. 
+
+Q- What layer would you inspect next?
+If DNS fails
+ Inspect Application Layer
+ Check DNS server configuration and network connectivity
+
+If HTTP 500 appears
+ Application Layer investigation
+ Check backend application logs and web server logs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
